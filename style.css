@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.service-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.418),black),url("img8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+.inner-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    color: cyan;
+}
+.border{
+    width: 20rem;
+    height: 0.1rem;
+    background-color: aqua;
+    margin: 1.5rem auto;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-box{
+    max-width: 33.33%;
+    padding: 1rem ;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.services-icon{
+    display: inline-block;
+    height: 4.4rem;
+    width: 4.4rem;
+    margin: 1.5rem 0;
+    border: 0.2rem  solid cyan;
+    color: cyan;
+    transform: rotate(45deg);
+    transition: 0.5s linear;
+}
+.services-icon i{
+    /* color: cyan; */
+    transform: rotate(-45deg);
+    line-height: 4.4rem;
+    font-size: 1.5rem;
+}
+.services-box:hover .services-icon{
+    background: rgba(0, 255, 255, 0.822);
+    color: white;
+}
+.service-title{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+}
+.description{
+    color:white;
+    font-size: 0.95rem;
+    padding: 0.2rem;
+    text-transform: capitalize;
+}
+@media all and (max-width:960px){
+    .services-box{
+        max-width: 45%;
+    }
+}
+@media all and (max-width:768px){
+    .services-box{
+        max-width: 50%;
+    }
+}
+@media all and (max-width:480px){
+    .services-box{
+        max-width: 100%;
+    }
+}
